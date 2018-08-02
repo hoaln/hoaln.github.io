@@ -1,6 +1,8 @@
 # LUU NHU HOA
 445 Nguyen Trai Street, Thanh Xuan, Ha Noi
 
+[RESUME](https://github.com/hoaln/hoaln.github.io/blob/master/%5Ben%5Dhoaln-resume.pdf)
+
 ### Skills
 - Languages: C, C#, familiar with C++ concepts
 - Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI),
@@ -67,4 +69,3 @@ Major: Automatic Control
 
 Consolation prize in National Mathematics Olympiad, Vietnam ministry of education and training	(2005)
 
-[resume](https://github.com/hoaln/hoaln.github.io/blob/master/%5Ben%5Dhoaln-resume.pdf)
