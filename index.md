@@ -53,7 +53,7 @@ The goal of this project is porting MQX driver from Coldfire platform to PowerPC
 
 ### Languages
 
-English: working proficiency (TOEIC 850)
+English: working proficiency (TOEIC 850) 
 
 ### Education
 
@@ -67,4 +67,4 @@ Major: Automatic Control
 
 Consolation prize in National Mathematics Olympiad, Vietnam ministry of education and training	(2005)
 
-https://github.com/hoaln/hoaln.github.io/blob/master/%5Ben%5Dhoaln-resume.pdf
+[resume](https://github.com/hoaln/hoaln.github.io/blob/master/%5Ben%5Dhoaln-resume.pdf)
