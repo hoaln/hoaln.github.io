@@ -45,6 +45,7 @@ _Overview: Measurement Automated Framework (MAF) is a part of automation test fr
 _Overview: .NET Micro Framework is an open source .net platform for resource-constrained. It includes tinyCLR that supports development in C#, Visual Basic .NET and debugging (in emulator or hardware) using Microsoft Visual Studio. This project aims to porting Micro Framework to Freescale Kinetis board (TWR-K40, TWR-K60)._
 - Setup build environment with msbuild, writing startup code, linker script for TWR-K60, developing drivers for TWR-K60 over Micro Framework including: Flash, GPIO, SPI, ADC, I2C, PWM, USB device, Touch sensing input, LCD Graphics, Touch Screen, Wifi.
 - Developing demo applications on C# for the project: Webserver USB device and Smart phone application (Program displays RSS CNN News, Yahoo weather, Yahoo Stock on LCD, using touch screen to switch between applications).
+
 _This project received praise from Freescale who appreciate our efforts that help them win the Designing Award of Ericsson_
 
 ***Porting MQX to MPC5125***	(September 2010 to November 2010)
