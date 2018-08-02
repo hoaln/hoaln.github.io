@@ -1,5 +1,4 @@
 title: Luu Nhu Hoa
-logo: hoaln.png
+logo: ./hoaln.png
 description: Embedded Software Engineer.
-google_analytics:
 theme: jekyll-theme-minimal
