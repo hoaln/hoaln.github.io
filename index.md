@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+# LUU NHU HOA
+445 Nguyen Trai Street, Thanh Xuan, Ha Noi
 
-You can use the [editor on GitHub](https://github.com/hoaln/hoaln.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Skills
+- Languages: C, C#, familiar with C++ concepts
+- Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI),
+- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  Freescale  family  (K60,  K40),  S12  Freescale Family.
+- Revision control: Clear case, SVN, Git.
+- Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Experience
+***Military Communication Center, Viettel R&D Institute*** (June 2012 to present)
 
-### Markdown
+***Developing Software for HF transceiver station for Navy*** (January 2015 to present)
+- Implementation and optimization software for main processor board to working with RCV, PA, UI, Remote-UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
+- Developed remote control protocol in HF transceiver for automatic measurement.
+- Developed ALE – 2G protocol (MIL-STD-141B, Appendix A), integrate ALE – 3G protocol (MIL-STD-141B, Appendix B) for HF transceiver to identify which is currently best frequency to communicate.
+- Integrate MELP library (low bitrate vocoder) for voice transmission over HF.
+- Develop JPEG-2000 application for image transmission over HF.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+***Developing Software for VHF transceiver handheld*** (January 2014 to December 2014)
+- Implementation and optimization software for main processor board to working with RF and UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
+- Developed remote control protocol in VHF transceiver for automatic measurement.
 
-```markdown
-Syntax highlighted code block
+***Developing Software Framework for SDR Platform*** (October 2012 to December 2013)
+- Work on software architecture, design and implementation for main processor board in Software defined radio (SDR) platform including master processor-board, multi slave RF-boards, UI board, and Remote UI board. The platform is used to develop multiple radio products ranging from HF to VHF, handheld to station transceiver.
 
-# Header 1
-## Header 2
-### Header 3
+***Developing Data Transmission Protocol for radio transceiver device*** (June 2012 to September 2012)
+-	Developed reliable protocol (ARQ) for data transmission over HF, VHF radio.
+-	Developed PC application for text, file, and images transmission through radio transceiver, display location position of radio device on map.
+-	Developed PC application for Configuration and Parameter Loader for HF, VHF radio.
 
-- Bulleted
-- List
+***G16, FPT Software***
+(September 2010 to June 2012)
+***Measurement Automated Framework Testing***
+(September 2011 to June 2012)
 
-1. Numbered
-2. List
+_Overview: Measurement Automated Framework (MAF) is a part of automation test framework for AUTOSAR MCAL drivers. It provides set of API function to communicate with NI-CARD to simulate the behavior of hardware devices. The goal of the project is test API functions of MAF._
+- Designing test specification on Testlink for CAN and LIN functions of MAF. Implementing test code with target board is MC9S12XEP100
 
-**Bold** and _Italic_ and `Code` text
+***Developing drivers for .NET Micro Framework***	(December 2010 to August 2011)
 
-[Link](url) and ![Image](src)
-```
+_Overview: .NET Micro Framework is an open source .net platform for resource-constrained. It includes tinyCLR that supports development in C#, Visual Basic .NET and debugging (in emulator or hardware) using Microsoft Visual Studio. This project aims to porting Micro Framework to Freescale Kinetis board (TWR-K40, TWR-K60)._
+- Setup build environment with msbuild, writing startup code, linker script for TWR-K60, developing drivers for TWR-K60 over Micro Framework including: Flash, GPIO, SPI, ADC, I2C, PWM, USB device, Touch sensing input, LCD Graphics, Touch Screen, Wifi.
+- Developing demo applications on C# for the project: Webserver USB device and Smart phone application (Program displays RSS CNN News, Yahoo weather, Yahoo Stock on LCD, using touch screen to switch between applications).
+_This project received praise from Freescale who appreciate our efforts that help them win the Designing Award of Ericsson_
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+***Porting MQX to MPC5125***	(September 2010 to November 2010)
 
-### Jekyll Themes
+_Overview: MQX is Freescale’s RTOS solution for 32bits MCUs. It includes core RTOS as well as I/O drivers.
+The goal of this project is porting MQX driver from Coldfire platform to PowerPC platform._
+- Porting driver for CF card and SD/MMC card for MQX (embedded OS) with target board is MPC5125
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hoaln/hoaln.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Languages
 
-### Support or Contact
+English: working proficiency (TOEIC 850)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Education
+
+Hanoi University of Technology, 1 Dai Co Viet Road, Hanoi	(2005 - 2010)
+
+Center for Talents Training (Honor Program)
+
+Major: Automatic Control
+
+### Honors and Awards
+
+Consolation prize in National Mathematics Olympiad, Vietnam ministry of education and training	(2005)
+
