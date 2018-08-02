@@ -8,7 +8,7 @@
 - Revision control: Clear case, SVN, Git.
 - Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
-### Experience
+### Experiences
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to present)
 
 ***Developing Software for HF transceiver station for Navy*** (January 2015 to present)
@@ -67,3 +67,4 @@ Major: Automatic Control
 
 Consolation prize in National Mathematics Olympiad, Vietnam ministry of education and training	(2005)
 
+https://github.com/hoaln/hoaln.github.io/blob/master/%5Ben%5Dhoaln-resume.pdf
