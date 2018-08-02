@@ -34,6 +34,7 @@
 
 ***G16, FPT Software***
 (September 2010 to June 2012)
+
 ***Measurement Automated Framework Testing***
 (September 2011 to June 2012)
 
