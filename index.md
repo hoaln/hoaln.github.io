@@ -32,11 +32,10 @@
 -	Developed PC application for text, file, and images transmission through radio transceiver, display location position of radio device on map.
 -	Developed PC application for Configuration and Parameter Loader for HF, VHF radio.
 
-***G16, FPT Software***
-(September 2010 to June 2012)
+***G16, FPT Software***(September 2010 to June 2012)
 
-***Measurement Automated Framework Testing***
-(September 2011 to June 2012)
+
+***Measurement Automated Framework Testing***(September 2011 to June 2012)
 
 _Overview: Measurement Automated Framework (MAF) is a part of automation test framework for AUTOSAR MCAL drivers. It provides set of API function to communicate with NI-CARD to simulate the behavior of hardware devices. The goal of the project is test API functions of MAF._
 - Designing test specification on Testlink for CAN and LIN functions of MAF. Implementing test code with target board is MC9S12XEP100
