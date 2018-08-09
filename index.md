@@ -15,7 +15,7 @@
 
 ***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to present)
 
-- Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling and convert IQ to CPRI format send to BBU
+- Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling, upsampling IQ format to CPRI format send to and receive from BBU
 
 ***Developing Software for HF transceiver station for Navy*** (January 2015 to July 2018)
 - Implementation and optimization software for main processor board to working with RCV, PA, UI, Remote-UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
