@@ -13,7 +13,11 @@
 ### Experiences
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to present)
 
-***Developing Software for HF transceiver station for Navy*** (January 2015 to present)
+***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to present)
+
+- Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling and convert IQ to CPRI format send to BBU
+
+***Developing Software for HF transceiver station for Navy*** (January 2015 to July 2018)
 - Implementation and optimization software for main processor board to working with RCV, PA, UI, Remote-UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
 - Developed remote control protocol in HF transceiver for automatic measurement.
 - Developed ALE – 2G protocol (MIL-STD-141B, Appendix A), integrate ALE – 3G protocol (MIL-STD-141B, Appendix B) for HF transceiver to identify which is currently best frequency to communicate.
