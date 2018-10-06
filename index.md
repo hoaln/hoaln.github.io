@@ -11,9 +11,14 @@
 - Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
 ### Experiences
-***Military Communication Center, Viettel R&D Institute*** (June 2012 to present)
 
-***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to present)
+***VinFast R&D, Vingroup*** (June 2012 to October 2018)
+
+- Develop firmware for electric vehicle
+
+***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
+
+***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to October 2018)
 
 - Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling, upsampling IQ format to CPRI format send to and receive from BBU
 
