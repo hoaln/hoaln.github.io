@@ -6,7 +6,7 @@
 ### Skills
 - Languages: C, C#, familiar with C++ concepts
 - Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI),
-- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  Freescale  family  (K60,  K40),  S12  Freescale Family.
+- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family.
 - Revision control: Clear case, SVN, Git.
 - Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
@@ -14,7 +14,10 @@
 
 ***VinFast R&D, Vingroup*** (June 2012 to October 2018)
 
-- Develop firmware for electric vehicle
+- Develop firmware for HMI of electric-scooter
+- Implement engine sound simulator algorithm for EV to enhance driving experiences and 
+- Implement ISO 15765-2:2016 (Can Transport Layer) using for firmware upgrade and diagnostic in all electric vehicles
+- Design and implement ARQ over Can Transport layer to re-transmit lost frame over CAN.
 
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
 
