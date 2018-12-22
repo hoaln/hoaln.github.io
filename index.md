@@ -15,7 +15,7 @@
 ***VinFast R&D, Vingroup*** (June 2012 to October 2018)
 
 - Develop firmware for HMI of electric-scooter
-- Implement engine sound simulator algorithm for EV to enhance driving experiences and 
+- Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
 - Implement ISO 15765-2:2016 (Can Transport Layer) using for firmware upgrade and diagnostic in all electric vehicles
 - Design and implement ARQ over Can Transport layer to re-transmit lost frame over CAN.
 
