@@ -1,8 +1,8 @@
 # LUU NHU HOA
 
-[A]445 Nguyen Trai Street, Thanh Xuan, Ha Noi
+445 Nguyen Trai Street, Thanh Xuan, Ha Noi
 
-[M]luunhuho@gmail.com
+luunhuhoa@gmail.com
 
 
 ### Skills
