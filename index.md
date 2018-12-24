@@ -12,7 +12,7 @@
 
 ### Experiences
 
-***VinFast R&D, Vingroup*** (June 2012 to October 2018)
+***Institue of Battery and Powertrain,Vintech*** (October 2018 to present)
 
 - Develop firmware for HMI of electric-scooter
 - Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
