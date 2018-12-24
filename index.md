@@ -1,6 +1,9 @@
 # LUU NHU HOA
+
 [A]445 Nguyen Trai Street, Thanh Xuan, Ha Noi
+
 [M]luunhuho@gmail.com
+
 
 ### Skills
 - Languages: C, C#, familiar with C++ concepts
