@@ -10,6 +10,10 @@ Embedded Software Engineer
 
 A father, a marathon runner, a tabletennis lover, an amatuer photographer
 
+### My personal projects
+
+https://gitlab.com/hoaln
+
 ### Contact me
 
 [luunhuhoa@gmail.com](mailto:luunhuhoa@gmail.com)
