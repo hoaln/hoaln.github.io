@@ -1,3 +1,9 @@
+---
+layout: page
+title: Resume
+permalink: /cv/
+---
+
 # LUU NHU HOA
 
 445 Nguyen Trai Street, Thanh Xuan, Ha Noi
