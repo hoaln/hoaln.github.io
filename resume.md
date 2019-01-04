@@ -8,9 +8,6 @@ permalink: /resume/
 
 445 Nguyen Trai Street, Thanh Xuan, Ha Noi
 
-luunhuhoa@gmail.com
-
-https://gitlab.com/hoaln
 
 ### Skills
 - Languages: C, C#, familiar with C++ concepts
