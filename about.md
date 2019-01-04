@@ -12,7 +12,7 @@ A father, a marathon runner, a tabletennis lover, an amatuer photographer
 
 ### My personal projects
 
-https://gitlab.com/hoaln
+[https://gitlab.com/hoaln]https://gitlab.com/hoaln
 
 ### Contact me
 
