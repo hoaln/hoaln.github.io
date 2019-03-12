@@ -10,7 +10,7 @@ permalink: /resume/
 
 
 ### Skills
-- Languages: C, C#, familiar with C++ concepts
+- Languages: C, C#, familiar with C++ concepts, Chora
 - Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI),
 - Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family.
 - Revision control: Clear case, SVN, Git.
@@ -18,11 +18,12 @@ permalink: /resume/
 
 ### Experiences
 
-***Institue of Battery and Powertrain,Vintech*** (October 2018 to present)
+***Institue of Battery and Powertrain,Vinfast*** (October 2018 to present)
 
-- Develop firmware for HMI of electric-scooter
+- Design and develop firmware for HMI of electric-scooter
 - Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
-- Design and implement protocol for firmware upgrade over CAN
+- Design and implement protocol for firmware upgrade over CAN using ISO 15762-2 for all devices in electric scooter.
+- Develop jig to testing hardware of HMI in production.
 
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
 
