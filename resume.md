@@ -22,7 +22,7 @@ permalink: /resume/
 
 - Design and develop firmware for HMI of electric-scooter
 - Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
-- Design and implement protocol for firmware upgrade over CAN using ISO 15762-2 for all devices in electric scooter.
+- Design and implement protocol for firmware upgrade over CAN using ISO 15765-2 for all devices in electric scooter.
 - Develop jig to testing hardware of HMI in production.
 
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
