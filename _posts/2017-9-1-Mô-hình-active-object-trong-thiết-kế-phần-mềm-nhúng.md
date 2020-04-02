@@ -17,7 +17,7 @@ _**Khái niệm Actor lần đầu tiên được sử dụng vào những năm 
 
 Một chương trình phần mềm nhúng có thể được thực thi bằng nhiều cách. Cách đơn giản nhất là bao gồm 1 chương trình main có vòng lặp vô tận chờ xử lí sự kiện với các sự kiện được kích hoạt từ chương trình phục vụ ngắt.
 
-```c
+```cpp
 void main() {
 
     while(1) { //endless loop
@@ -39,7 +39,7 @@ Cách tiếp cận theo lập trình tuần tự này sẽ không đáp ứng đ
 
 Giải pháp khi hệ thống trở nên lớn hơn một cách tự nhiên là sử dụng một hệ điều hành thời gian thực (RTOS). Thay vì chỉ có một vòng lặp vô tận thì ta có nhiều vòng lặp vô tận chạy trên từng tác vụ khác nhau với cấu trúc giống như Hình 1. Tuy nhiên nếu hệ thống chỉ đơn thuần là nhiều tác vụ hơn thì chương trình vẫn không đảm bảo đáp ứng thời gian thực tốt hơn do các tác vụ vẫn luân phiên chiếm quyền điều khiển CPU chỉ đề polling các sự kiện. RTOS giải quyết vấn đề này bằng cách hỗ trợ cơ chế thread blocking thông qua semaphore, mailbox … khi đó tác vụ chỉ chiếm quyền CPU khi thực sự có sự kiện diễn ra. Một chương trình sử dụng RTOS điển hình lúc đó sẽ giống như Hình 2
 
-```c
+```cpp
  void *thread_handler(void *arg) {   
   /* super loop */
    SEvt e;
@@ -60,7 +60,7 @@ Hình 2:
 
 Tuy nhiên mô hình trên chưa giải quyết hết những vấn đề ta sẽ gặp phải khi một hệ thống lớn dần lên. Hầu hết các hệ thống nhúng sẽ đồng thời là hệ thống đa trạng thái khi đó tùy vào trạng thái hiện tại mà sự kiện gửi đến sẽ được xử lí khác nhau. Phần đa các các trạng thái được lưu thành các biến cờ hệ thống, khi đó mỗi hàm xử lí ứng với một sự kiện sẽ trông giống như Hình 3
 
-```c
+```cpp
 if(X_state == state_x_0) {
    //do sth 
 } else {				
@@ -124,7 +124,7 @@ Hình 8:
 
 Để tăng tính kế thừa, mô hình active object sử dụng sơ đồ trạng thái phân cấp, các sơ đồ trạng thái con có thể kế thừa hàm xử lí sự kiện từ sơ đồ trạng thái cha.
 
-```c
+```cpp
 #define HSM_DEFINE_STATE(TYPE, STATE, PARENT) \
   static State STATE(TYPE * const me, SEvt const * const e); \
   static HsmState STATE##_s = {.parent = (HsmState*)PARENT, .func = (StateHandler*) &STATE}
@@ -162,7 +162,7 @@ Hình 9:
 
 Hình 9 mô tả ví dụ một active object có 2 trạng thái **ModuleX\_tx**, **ModuleX\_rx**, trạng thái TX có 1 lớp cha là Trạng thái **ModuleX\_sup**. Các sự kiện **ENTRY** và **EXIT** sẽ được gọi bởi hệ thống khi xảy ra việc thay đổi trạng thái. Có thể thấy hàm xử lí trạng thái của **ModuleX\_tx** chỉ xử lí sự kiện **CHANGE\_RX**, các sự kiện khác được kế thừa xử lí từ lớp cha là **ModuleX\_sup**. Việc định nghĩa các trạng thái như là các con trỏ hàm thay biến cũng hạn chế việc trạng thái bị thay đổi  ngoài ý muốn bởi tầng ứng dụng, mọi tác động lên con trỏ hàm này được ẩn trong tầng hệ thống.
 
-```c
+```cpp
 void Hsm_Dispatch(Hsm * const me, SEvt const * const e) { 
  HsmState const *s;
  HsmState const *t;
