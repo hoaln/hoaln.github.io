@@ -8,6 +8,7 @@ title: Mô hình active object trong thiết kế phần mềm nhúng
 # **MÔ HÌNH ACTIVE OBJECT TRONG THIẾT KẾ PHẦN MỀM NHÚNG**
 
 TÓM TẮT
+
 _**Khái niệm Actor lần đầu tiên được sử dụng vào những năm 1970 do Carl Hewitt đưa ra để chỉ các đối tượng phần mềm độc lập giao tiếp với nhau thông qua truyền bản tin. Chuẩn UML sau đó giới thiệu khái niệm khái niệm active object là đối tượng có tác vụ điều khiển của riêng nó (&quot; an object having its own thread of control&quot; ) để xử lí các sự kiện cho đến khi hoàn thành (run to completion) trao đổi bởi các active object khác. Chuẩn UML cũng mở rộng active object là một đối tượng có trạng thái, tùy vào lịch sử hiện tại active object đó mà nó xử lí cùng sự kiện đến khác nhau. Có nhiều công cụ thiết kế tự động cho hệ thống nhúng hỗ trợ chuyển thiết kế theo mô hình active object với UML sang mã nguồn như ROOM virtual machine, VisualSTATE engine của IAR, Object Excution Framework của Rhapsody I-logix, Stateflow của MathWorks… Thay vì dùng các công cụ trên báo cáo này trình bày các thành phần cơ bản để tự xây dựng một hệ thống theo mô hình Active Object đáp ứng các tiêu chí về gọn nhẹ (tùy vào nền tảng phần cứng), tin cậy, tiền định và đáp ứng thời gian thực**_
 
 **TỪ KHÓA:** _Active Object; Phần mềm hệ thống; State Machine; Event Driven Architect_
@@ -16,7 +17,7 @@ _**Khái niệm Actor lần đầu tiên được sử dụng vào những năm 
 
 Một chương trình phần mềm nhúng có thể được thực thi bằng nhiều cách. Cách đơn giản nhất là bao gồm 1 chương trình main có vòng lặp vô tận chờ xử lí sự kiện với các sự kiện được kích hoạt từ chương trình phục vụ ngắt.
 
-``` c
+```c
 void main() {
 
     while(1) { //endless loop
@@ -38,7 +39,7 @@ Cách tiếp cận theo lập trình tuần tự này sẽ không đáp ứng đ
 
 Giải pháp khi hệ thống trở nên lớn hơn một cách tự nhiên là sử dụng một hệ điều hành thời gian thực (RTOS). Thay vì chỉ có một vòng lặp vô tận thì ta có nhiều vòng lặp vô tận chạy trên từng tác vụ khác nhau với cấu trúc giống như Hình 1. Tuy nhiên nếu hệ thống chỉ đơn thuần là nhiều tác vụ hơn thì chương trình vẫn không đảm bảo đáp ứng thời gian thực tốt hơn do các tác vụ vẫn luân phiên chiếm quyền điều khiển CPU chỉ đề polling các sự kiện. RTOS giải quyết vấn đề này bằng cách hỗ trợ cơ chế thread blocking thông qua semaphore, mailbox … khi đó tác vụ chỉ chiếm quyền CPU khi thực sự có sự kiện diễn ra. Một chương trình sử dụng RTOS điển hình lúc đó sẽ giống như Hình 2
 
-``` c
+```c
  void *thread_handler(void *arg) {   
   /* super loop */
    SEvt e;
@@ -59,7 +60,7 @@ Hình 2:
 
 Tuy nhiên mô hình trên chưa giải quyết hết những vấn đề ta sẽ gặp phải khi một hệ thống lớn dần lên. Hầu hết các hệ thống nhúng sẽ đồng thời là hệ thống đa trạng thái khi đó tùy vào trạng thái hiện tại mà sự kiện gửi đến sẽ được xử lí khác nhau. Phần đa các các trạng thái được lưu thành các biến cờ hệ thống, khi đó mỗi hàm xử lí ứng với một sự kiện sẽ trông giống như Hình 3
 
-``` c
+```c
 if(X_state == state_x_0) {
    //do sth 
 } else {				
@@ -88,7 +89,7 @@ Khái niệm active object được mô tả bởi các đặc trưng:
 * --Các active object không chia sẻ dữ liệu của mình mà trao đổi thông tin qua cơ chế truyền sự kiện.
 * --Mỗi active object bao gồm hệ thống xử lí trạng thái phân cấp (hierarchical state machine - HSM)
 
-![](https://github.com/hoaln/hoaln.github.io/blob/master/active_object_images/act-hinh-4.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-4.jpg)
 Hình 4:
 
 Chương trình sẽ được thiết kế phân chia thành các active object chịu trách nhiệm cho các tài nguyên khác nhau của hệ thống: điều khiển ngoại vi, giao tiếp với mạch ngoài … Hệ thống có bao nhiêu &quot; tài nguyên&quot; thì sẽ có bấy nhiêu luồng và HSM đi kèm (acive object).
@@ -97,26 +98,26 @@ Chương trình sẽ được thiết kế phân chia thành các active object 
 
 Cơ chế truyền thông điệp là nền tảng cơ bản của hệ thống xử lí theo sự kiện. Cơ chế truyền thông giữa các active object được xây dựng trên cơ sở các tính năng semaphore, mailbox … của RTOS.
 
-![](https://github.com/hoaln/hoaln.github.io/blob/master/active_object_images/act-hinh-5.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-5.jpg)
 Hình 5:
 
 RTOS thông thường sẽ hỗ trợ cơ chế mailbox trong đó dữ liệu từ lúc ghi vào và đọc ra sẽ mất hai lần sao chép (thực hiện bở RTOS). Khi thông điệp có độ dài lớn thì cơ chế trên sẽ làm tăng độ trễ truyền thông giữa các active object.
 
 Mô hình active object sử dụng cơ chế &quot; zero-copy&quot; như Hình 6
  
-![](https://github.com/hoaln/hoaln.github.io/blob/master/active_object_images/act-hinh-6.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-6.jpg)
 Hình 6:
 
 Trong cơ chế &quot; zero-copy&quot; , một event sẽ được cấp phát động trong event pool, và RTOS sẽ chỉ truyền con trỏ trỏ đến event đã được cấp phát. Sau khi event được xử lí, nó sẽ được giải phóng khỏi event pool.Để đảm bảo tính tiền định của chương trình.cũng như chống phân mảnh bộ nhớ, việc cấp phát động event sẽ được thực hiện thông qua **fixed-size buffer pattern** (không cấp phát từ heap).
 
 Để hỗ trợ một event có thể được dùng để truyền đến nhiều đối tượng (gửi multicast), mô hình active object sử dụng **reference counting pattern** để kiểm soát việc một event đã được xử lí hết ở tất cả các đối tượng mà nó được gửi đến hay chưa. Sau khi kiểm tra event đã được xử lí hết, hệ thống mới thu hồi event này khỏi event pool.
 
-![](https://github.com/hoaln/hoaln.github.io/blob/master/active_object_images/act-hinh-7.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-7.jpg)
 Hình 7:
 
 Mô hình active object cũng hỗ trợ xử lí các sự kiện chờ. Khi một sự kiện được gửi đến mà hệ thống chưa kịp về đúng trạng thái cần thiết, sự kiện đó có thể được đưa vào hàng đợi và sẽ được gọi lại để xử lí khi hệ thống chuyển về trạng thái đúng.
 
-![](https://github.com/hoaln/hoaln.github.io/blob/master/active_object_images/act-hinh-8.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-8.jpg)
 Hình 8:
 
   2.3  ***XỬ LÝ TRẠNG THÁI***
@@ -129,7 +130,7 @@ Hình 10 mô tả cách thức hệ thống xử lí các sự kiện gửi tớ
 
 Khi hàm xử lí chuyển từ trạng thái ModuleX\_tx sang ModuleX\_rx, hệ thống sẽ gọi lần lượt đến hàm xử lí các sự kiện EXIT của ModuleX\_tx, EXIT của ModuleX\_sup (lớp cha), và ENTRY của ModuleX\_rx. Hình 11 mô tả cách thức việc này được xử lí sử dụng giải thuật lowest common ancestor để tìm lớp thấp nhất mà cả hai trạng thái này đều kế thừa và sau đó gọi các hàm xử lí EXIT, ENTRY tương ứng trong chuỗi thay đổi trạng thái.
 
-``` c
+```c
 #define HSM_DEFINE_STATE(TYPE, STATE, PARENT) \
   static State STATE(TYPE * const me, SEvt const * const e); \
   static HsmState STATE##_s = {.parent = (HsmState*)PARENT, .func = (StateHandler*) &STATE}
@@ -165,7 +166,7 @@ static State ModuleX_tx(SModuleAO * const me,  SEvt const * const e) {
 ```
 Hình 9:
 
-``` c
+```c
 void Hsm_Dispatch(Hsm * const me, SEvt const * const e) { 
  HsmState const *s;
  HsmState const *t;
