@@ -32,7 +32,7 @@ void main() {
 void ISR0() {
    event = 0;
 }
-```
+```  
 Hình 1:
 
 Cách tiếp cận theo lập trình tuần tự này sẽ không đáp ứng được việc xử lí sự kiện tức thì khi mà hệ thống lớn dần và cần xử lí nhiều sự kiện hơn
@@ -55,7 +55,7 @@ Giải pháp khi hệ thống trở nên lớn hơn một cách tự nhiên là 
    }
     return (void *)0; /* return success */
 }
-```
+```  
 Hình 2:
 
 Tuy nhiên mô hình trên chưa giải quyết hết những vấn đề ta sẽ gặp phải khi một hệ thống lớn dần lên. Hầu hết các hệ thống nhúng sẽ đồng thời là hệ thống đa trạng thái khi đó tùy vào trạng thái hiện tại mà sự kiện gửi đến sẽ được xử lí khác nhau. Phần đa các các trạng thái được lưu thành các biến cờ hệ thống, khi đó mỗi hàm xử lí ứng với một sự kiện sẽ trông giống như Hình 3
@@ -73,7 +73,7 @@ if(X_state == state_x_0) {
     }
   }
 } //spaghetti code: multi nested loop!
-```
+```  
 Hình 3:
 
 Một khi hệ thống lớn dần, số sự kiện, số trạng thái nhiều hơn, chương trình sẽ không thể bảo trì được. Thêm vào đó, nếu các biến trạng thái được chia sẻ giữa nhiều luồng sẽ tăng xác suất  xung đột giữa các luồng, deadlock, priority inversion … đe dọa sự ổn định hệ thống. Tùy vào kinh nghiệm của nhà phát triển để lựa chọn hệ thống nên có bao nhiêu luồng, bao nhiêu cờ trạng thái, cờ trạng thái nào được quản lí bởi luồng nào… sẽ quyết định khả năng mở rộng của hệ thống. Những câu hỏi này sẽ được trả lời trong mô hình thiết kế theo active object.
@@ -89,7 +89,7 @@ Khái niệm active object được mô tả bởi các đặc trưng:
 * --Các active object không chia sẻ dữ liệu của mình mà trao đổi thông tin qua cơ chế truyền sự kiện.
 * --Mỗi active object bao gồm hệ thống xử lí trạng thái phân cấp (hierarchical state machine - HSM)
 
-![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-4.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-4.jpg)  
 Hình 4:
 
 Chương trình sẽ được thiết kế phân chia thành các active object chịu trách nhiệm cho các tài nguyên khác nhau của hệ thống: điều khiển ngoại vi, giao tiếp với mạch ngoài … Hệ thống có bao nhiêu &quot; tài nguyên&quot; thì sẽ có bấy nhiêu luồng và HSM đi kèm (acive object).
@@ -98,37 +98,31 @@ Chương trình sẽ được thiết kế phân chia thành các active object 
 
 Cơ chế truyền thông điệp là nền tảng cơ bản của hệ thống xử lí theo sự kiện. Cơ chế truyền thông giữa các active object được xây dựng trên cơ sở các tính năng semaphore, mailbox … của RTOS.
 
-![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-5.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-5.jpg)  
 Hình 5:
 
 RTOS thông thường sẽ hỗ trợ cơ chế mailbox trong đó dữ liệu từ lúc ghi vào và đọc ra sẽ mất hai lần sao chép (thực hiện bở RTOS). Khi thông điệp có độ dài lớn thì cơ chế trên sẽ làm tăng độ trễ truyền thông giữa các active object.
 
 Mô hình active object sử dụng cơ chế &quot; zero-copy&quot; như Hình 6
  
-![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-6.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-6.jpg)  
 Hình 6:
 
 Trong cơ chế &quot; zero-copy&quot; , một event sẽ được cấp phát động trong event pool, và RTOS sẽ chỉ truyền con trỏ trỏ đến event đã được cấp phát. Sau khi event được xử lí, nó sẽ được giải phóng khỏi event pool.Để đảm bảo tính tiền định của chương trình.cũng như chống phân mảnh bộ nhớ, việc cấp phát động event sẽ được thực hiện thông qua **fixed-size buffer pattern** (không cấp phát từ heap).
 
 Để hỗ trợ một event có thể được dùng để truyền đến nhiều đối tượng (gửi multicast), mô hình active object sử dụng **reference counting pattern** để kiểm soát việc một event đã được xử lí hết ở tất cả các đối tượng mà nó được gửi đến hay chưa. Sau khi kiểm tra event đã được xử lí hết, hệ thống mới thu hồi event này khỏi event pool.
 
-![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-7.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-7.jpg)  
 Hình 7:
 
 Mô hình active object cũng hỗ trợ xử lí các sự kiện chờ. Khi một sự kiện được gửi đến mà hệ thống chưa kịp về đúng trạng thái cần thiết, sự kiện đó có thể được đưa vào hàng đợi và sẽ được gọi lại để xử lí khi hệ thống chuyển về trạng thái đúng.
 
-![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-8.jpg)
+![](https://raw.githubusercontent.com/hoaln/hoaln.github.io/master/active_object_images/act-hinh-8.jpg)  
 Hình 8:
 
   2.3  ***XỬ LÝ TRẠNG THÁI***
 
 Để tăng tính kế thừa, mô hình active object sử dụng sơ đồ trạng thái phân cấp, các sơ đồ trạng thái con có thể kế thừa hàm xử lí sự kiện từ sơ đồ trạng thái cha.
-
-Hình 9 mô tả ví dụ một active object có 2 trạng thái ModuleX\_tx, ModuleX\_rx, trạng thái TX có 1 lớp cha là Trạng thái ModuleX\_sup. Các sự kiện ENTRY và EXIT sẽ được gọi bởi hệ thống khi xảy ra việc thay đổi trạng thái. Có thể thấy hàm xử lí trạng thái của ModuleX\_tx chỉ xử lí sự kiện CHANGE\_RX, các sự kiện khác được kế thừa xử lí từ lớp cha là ModuleX\_sup. Việc định nghĩa các trạng thái như là các con trỏ hàm thay biến cũng hạn chế việc trạng thái bị thay đổi  ngoài ý muốn bởi tầng ứng dụng, mọi tác động lên con trỏ hàm này được ẩn trong tầng hệ thống.
-
-Hình 10 mô tả cách thức hệ thống xử lí các sự kiện gửi tới. Có thể thấy nếu kết quả trả về của hàm xử lí trạng thái là RET\_SUPER thì hàm xử lí lớp trên với cùng sự kiện đó sẽ được gọi cho đến khi sự kiện đó được xử lí.
-
-Khi hàm xử lí chuyển từ trạng thái ModuleX\_tx sang ModuleX\_rx, hệ thống sẽ gọi lần lượt đến hàm xử lí các sự kiện EXIT của ModuleX\_tx, EXIT của ModuleX\_sup (lớp cha), và ENTRY của ModuleX\_rx. Hình 11 mô tả cách thức việc này được xử lí sử dụng giải thuật lowest common ancestor để tìm lớp thấp nhất mà cả hai trạng thái này đều kế thừa và sau đó gọi các hàm xử lí EXIT, ENTRY tương ứng trong chuỗi thay đổi trạng thái.
 
 ```c
 #define HSM_DEFINE_STATE(TYPE, STATE, PARENT) \
@@ -163,8 +157,10 @@ static State ModuleX_tx(SModuleAO * const me,  SEvt const * const e) {
 
    return ret;
 }
-```
+```  
 Hình 9:
+
+Hình 9 mô tả ví dụ một active object có 2 trạng thái **ModuleX\_tx**, **ModuleX\_rx**, trạng thái TX có 1 lớp cha là Trạng thái **ModuleX\_sup**. Các sự kiện **ENTRY** và **EXIT** sẽ được gọi bởi hệ thống khi xảy ra việc thay đổi trạng thái. Có thể thấy hàm xử lí trạng thái của **ModuleX\_tx** chỉ xử lí sự kiện **CHANGE\_RX**, các sự kiện khác được kế thừa xử lí từ lớp cha là **ModuleX\_sup**. Việc định nghĩa các trạng thái như là các con trỏ hàm thay biến cũng hạn chế việc trạng thái bị thay đổi  ngoài ý muốn bởi tầng ứng dụng, mọi tác động lên con trỏ hàm này được ẩn trong tầng hệ thống.
 
 ```c
 void Hsm_Dispatch(Hsm * const me, SEvt const * const e) { 
@@ -233,8 +229,13 @@ void Hsm_Dispatch(Hsm * const me, SEvt const * const e) {
 	}
   }
 }
-```
+```  
 Hình 10:
+
+Hình 10 mô tả cách thức hệ thống xử lí các sự kiện gửi tới. Có thể thấy nếu kết quả trả về của hàm xử lí trạng thái là **RET\_SUPER** thì hàm xử lí lớp trên với cùng sự kiện đó sẽ được gọi cho đến khi sự kiện đó được xử lí.
+
+Khi hàm xử lí chuyển từ trạng thái **ModuleX\_tx** sang **ModuleX\_rx**, hệ thống sẽ gọi lần lượt đến hàm xử lí các sự kiện EXIT của **ModuleX\_tx**, **EXIT** của **ModuleX\_sup** (lớp cha), và **ENTRY** của **ModuleX\_rx**.  
+Quá trình chuyển trạng thái sử dụng giải thuật lowest common ancestor để tìm lớp thấp nhất mà cả hai trạng thái này đều kế thừa và sau đó gọi các hàm xử lí **EXIT**, **ENTRY** tương ứng trong chuỗi thay đổi trạng thái.
 
 3. **KẾT LUẬN**
 
