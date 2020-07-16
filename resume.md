@@ -18,7 +18,23 @@ permalink: /resume/
 
 ### Experiences
 
-***Institue of Battery and Powertrain,Vinfast*** (October 2018 to present)
+***Institue of Electric Scooter,Vinfast*** (June 2019 to present)
+
+***Developing Software for CPU module of Vingroup Ventilator*** (April 2020 to June 2020)
+
+**Role: Lead Firmware Engineer**
+
+
+***Developing Software for connectivity module of E-scooter*** (June 2019 to December 2019)
+
+**Role: Senior Firmware Engineer**
+
+
+***Institue of Battery and Powertrain,Vinfast*** (October 2018 to June 2019)
+
+***Developing Software for HMI of E-scooter*** (October 2018 to June 2019)
+
+**Role: Senior Firmware Engineer**
 
 - Design and develop firmware for HMI of electric-scooter
 - Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
@@ -29,9 +45,14 @@ permalink: /resume/
 
 ***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to October 2018)
 
+**Role: Lead Firmware Engineer**
+
 - Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling, upsampling IQ format to CPRI format send to and receive from BBU
 
 ***Developing Software for HF transceiver station for Navy*** (January 2015 to July 2018)
+
+**Role: Lead Firmware Engineer**
+
 - Implementation and optimization software for main processor board to working with RCV, PA, UI, Remote-UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
 - Developed remote control protocol in HF transceiver for automatic measurement.
 - Developed ALE – 2G protocol (MIL-STD-141B, Appendix A), integrate ALE – 3G protocol (MIL-STD-141B, Appendix B) for HF transceiver to identify which is currently best frequency to communicate.
@@ -39,13 +60,22 @@ permalink: /resume/
 - Develop JPEG-2000 application for image transmission over HF.
 
 ***Developing Software for VHF transceiver handheld*** (January 2014 to December 2014)
+
+**Role: Senior Firmware Engineer**
+
 - Implementation and optimization software for main processor board to working with RF and UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
 - Developed remote control protocol in VHF transceiver for automatic measurement.
 
 ***Developing Software Framework for SDR Platform*** (October 2012 to December 2013)
+
+**Role: Senior Firmware Engineer**
+
 - Work on software architecture, design and implementation for main processor board in Software defined radio (SDR) platform including master processor-board, multi slave RF-boards, UI board, and Remote UI board. The platform is used to develop multiple radio products ranging from HF to VHF, handheld to station transceiver.
 
 ***Developing Data Transmission Protocol for radio transceiver device*** (June 2012 to September 2012)
+
+**Role: Firmware Engineer**
+
 -	Developed reliable protocol (ARQ) for data transmission over HF, VHF radio.
 -	Developed PC application for text, file, and images transmission through radio transceiver, display location position of radio device on map.
 -	Developed PC application for Configuration and Parameter Loader for HF, VHF radio.
@@ -55,10 +85,14 @@ permalink: /resume/
 
 ***Measurement Automated Framework Testing***(September 2011 to June 2012)
 
+**Role: Developer**
+
 _Overview: Measurement Automated Framework (MAF) is a part of automation test framework for AUTOSAR MCAL drivers. It provides set of API function to communicate with NI-CARD to simulate the behavior of hardware devices. The goal of the project is test API functions of MAF._
 - Designing test specification on Testlink for CAN and LIN functions of MAF. Implementing test code with target board is MC9S12XEP100
 
 ***Developing drivers for .NET Micro Framework***	(December 2010 to August 2011)
+
+**Role: Developer**
 
 _Overview: .NET Micro Framework is an open source .net platform for resource-constrained. It includes tinyCLR that supports development in C#, Visual Basic .NET and debugging (in emulator or hardware) using Microsoft Visual Studio. This project aims to porting Micro Framework to Freescale Kinetis board (TWR-K40, TWR-K60)._
 - Setup build environment with msbuild, writing startup code, linker script for TWR-K60, developing drivers for TWR-K60 over Micro Framework including: Flash, GPIO, SPI, ADC, I2C, PWM, USB device, Touch sensing input, LCD Graphics, Touch Screen, Wifi.
@@ -67,6 +101,8 @@ _Overview: .NET Micro Framework is an open source .net platform for resource-con
 _This project received praise from Freescale who appreciate our efforts that help them win the Designing Award of Ericsson_
 
 ***Porting MQX to MPC5125***	(September 2010 to November 2010)
+
+**Role: Developer**
 
 _Overview: MQX is Freescale’s RTOS solution for 32bits MCUs. It includes core RTOS as well as I/O drivers.
 The goal of this project is porting MQX driver from Coldfire platform to PowerPC platform._
