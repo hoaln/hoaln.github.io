@@ -30,19 +30,19 @@ permalink: /resume/
 
 **Role: Firmware Team Leader**
 
-- Planning, managing, coordinating, advisory in developing firmware for modules in charging station
+- Planning, managing, coordinating, advisory in developing firmware for multiple modules in charging station
 
 ***Developing Software for E-scooter*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
-- Planning, managing, coordinating, advisory in developing firmware for ECUs in E-scooter (VCU, HMI, SCU)
+- Planning, managing, coordinating, advisory in developing firmware for multiple ECUs in E-scooter
 
 ***Developing Software for CPU module of Vingroup Ventilator*** (April 2020 to June 2020)
 
 **Role: Lead Firmware Engineer**
 
-- Developing LCD graphics drivers and library, tunning PID for Blower Fan using in Vingroup Ventilator. (Design based on open source of Puritan Bennet 560)
+- Developing LCD graphics drivers and library, tunning PID for controller of blower fan using in Vingroup Ventilator. (Design based on open source of Puritan Bennet 560)
 
 ***Developing Software for smart-connectivity module of E-scooter*** (June 2019 to December 2019)
 
