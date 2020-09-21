@@ -28,9 +28,9 @@ permalink: /resume/
 
 ***Developing Software for AC Charging station for E-scooter*** (April 2020 to present)
 
-- Planning, managing, coordinating, advisory in developing firmware for modules in charging station
-
 **Role: Firmware Team Leader**
+
+- Planning, managing, coordinating, advisory in developing firmware for modules in charging station
 
 ***Developing Software for E-scooter*** (April 2020 to June 2020)
 
