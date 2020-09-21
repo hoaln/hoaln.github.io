@@ -20,11 +20,15 @@ permalink: /resume/
 
 ***Institue of Electric Scooter,Vinfast*** (June 2019 to present)
 
-***Developing Software for AC Charging station for E-car*** (April 2020 to June 2020)
+***Developing Software for AC Charging station for E-car*** (April 2020 to present)
 
 **Role: Firmware Team Leader**
 
-***Developing Software for AC Charging station for E-scooter*** (April 2020 to June 2020)
+- Advisory in developing firmware for main controller in E-car charging station
+
+***Developing Software for AC Charging station for E-scooter*** (April 2020 to present)
+
+- Planning, managing, coordinating, advisory in developing firmware for modules in charging station
 
 **Role: Firmware Team Leader**
 
@@ -32,13 +36,20 @@ permalink: /resume/
 
 **Role: Firmware Team Leader**
 
+- Planning, managing, coordinating, advisory in developing firmware for ECUs in E-scooter (VCU, HMI, SCU)
+
 ***Developing Software for CPU module of Vingroup Ventilator*** (April 2020 to June 2020)
 
 **Role: Lead Firmware Engineer**
 
-***Developing Software for connectivity module of E-scooter*** (June 2019 to December 2019)
+- Developing LCD graphics drivers and library, tunning PID for Blower Fan using in Vingroup Ventilator. (Design based on open source of Puritan Bennet 560)
+
+***Developing Software for smart-connectivity module of E-scooter*** (June 2019 to December 2019)
 
 **Role: Senior Firmware Engineer**
+
+- Design and develop firmware for Smart Connectivity Unit of electric-scooter (GPS tracking, Antitheft). SCU module connecting to AWS server using MQTT/Protobuf.
+- Develop testing hardware protocol of SCU for mass production.
 
 ***Institue of Battery and Powertrain,Vinfast*** (October 2018 to June 2019)
 
@@ -49,7 +60,7 @@ permalink: /resume/
 - Design and develop firmware for HMI of electric-scooter
 - Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
 - Design and implement protocol for firmware upgrade over CAN using ISO 15765-2 for all devices in electric scooter.
-- Develop jig to testing hardware of HMI in production.
+- Develop testing hardware protocol of HMI in mass production.
 
 ***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
 
