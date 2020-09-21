@@ -20,19 +20,19 @@ permalink: /resume/
 
 ***Institue of Electric Scooter,Vinfast*** (June 2019 to present)
 
-***Developing Software for AC Charging station for E-car*** (April 2020 to present)
+***Developing Software for AC Charging station for E-car*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
 - Advisory in developing firmware for main controller in E-car charging station
 
-***Developing Software for AC Charging station for E-scooter*** (April 2020 to present)
+***Developing Software for AC Charging station for E-scooter*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
 - Planning, managing, coordinating, advisory in developing firmware for modules in charging station
 
-***Developing Software for E-scooter*** (April 2020 to June 2020)
+***Developing Software for E-scooter*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
