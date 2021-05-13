@@ -6,37 +6,54 @@ permalink: /resume/
 
 # LUU NHU HOA
 
-445 Nguyen Trai Street, Thanh Xuan, Ha Noi
+Tay Mo, Nam Tu Liem, Ha Noi
 
 
 ### Skills
 - Languages: C, C#, familiar with C++ concepts, Chora
-- Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI),
-- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family.
-- Revision control: Clear case, SVN, Git.
+- Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI), FreeRTOS, Yocto
+- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family, IMXRT, IMX6, S32Kxxxx, NRF52840 (Nordic), ESP32, BeagleBone, Raspbery Pi, Nvidia Jetson
+- Technologies: VHF/HF Radio Comunication: ALE-2G, ALE-3G, audio processing (CVSD, MELPE), FEC (Reed-Solomon, Viterbi), Encryption (AES, Optiga Trust B), BLE, AWS IOT Device, Charging Station (ISO 15118, ISO 61851), AUTOSAR, CanTP (ISO 15765-2), Electric Vehicle
 - Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
 ### Experiences
 
-***Institue of Electric Scooter,Vinfast*** (June 2019 to present)
+***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (November 2010 to present)
 
-***Developing Software for AC Charging station for E-car*** (March 2020 to present)
-
-**Role: Firmware Team Leader**
-
-- Advisory in developing firmware for main controller in E-car charging station
-
-***Developing Software for AC Charging station for E-scooter*** (March 2020 to present)
+***Developing Software for DC Charging station for E-car*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
-- Planning, managing, coordinating, advisory in developing firmware for multiple modules in charging station
+- Manage/review for developing firmware in high-voltage mcu, fan controller mcu, control pilot mcu. 
+- Developing V2G software stack (ISO 15118), developing can services in central controller (embedded linux).
 
-***Developing Software for E-scooter*** (March 2020 to present)
+***Developing Software for AC-Charging station for E-car*** (March 2020 to present)
 
 **Role: Firmware Team Leader**
 
-- Planning, managing, coordinating, advisory in developing firmware for multiple ECUs in E-scooter
+ - Manage/review for developing firmware in main controller mcu (3-phase mesurement and relay control).
+
+***Electrical & Electronics Center, Autonomous Driving Institue, Vinsmart*** (October 2020 to November 2020)
+
+***Developing Drivers for Autonomous Driving Platform*** (Octobor 2020 to November 2020)
+
+**Role: Integration Team Leader**
+
+- Tesing and developing driver for medium/long range radar, short range radar (CAN), ultrasonic sensors (LIN), GMSL-2 camera for data acquisition platform.
+
+***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (June 2019 to October 2020)
+
+***Developing Software for AC-Charging station for E-scooter*** (March 2020 to September 2020)
+
+**Role: Firmware Team Leader**
+
+- Planning, managing, coordinating, advisory, review in developing firmware for charging point mcu, central gateway mcu in E-scooter charging station.
+
+***Developing Software for E-scooter*** (March 2020 to April 2021)
+
+**Role: Firmware Team Leader**
+
+- Planning, managing, coordinating, advisory, review in developing firmware for multiple ECUs in E-scooter (Ludo, Impes, Klara S, Theon, ...)
 
 ***Developing Software for CPU module of Vingroup Ventilator*** (April 2020 to June 2020)
 
