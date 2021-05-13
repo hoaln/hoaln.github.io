@@ -20,14 +20,14 @@ Tay Mo, Nam Tu Liem, Ha Noi
 
 ***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (November 2010 to present)
 
-***Developing Software for DC Charging station for E-car*** (March 2020 to present)
+***Developing Software for DC Charging station for E-car*** (January 2021 to present)
 
 **Role: Firmware Team Leader**
 
 - Manage/review for developing firmware in high-voltage mcu, fan controller mcu, control pilot mcu. 
 - Developing V2G software stack (ISO 15118), developing can services in central controller (embedded linux).
 
-***Developing Software for AC-Charging station for E-car*** (March 2020 to present)
+***Developing Software for AC-Charging station for E-car*** (November 2020 to present)
 
 **Role: Firmware Team Leader**
 
