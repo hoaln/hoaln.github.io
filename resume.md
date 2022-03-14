@@ -12,13 +12,19 @@ Tay Mo, Nam Tu Liem, Ha Noi
 ### Skills
 - Languages: C, C#, familiar with C++ concepts, Chora
 - Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI), FreeRTOS, Yocto
-- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family, IMXRT, IMX6, S32Kxxxx, NRF52840 (Nordic), ESP32, BeagleBone, Raspbery Pi, Nvidia Jetson
-- Technologies: VHF/HF Radio Comunication: ALE-2G, ALE-3G, audio processing (CVSD, MELPE), FEC (Reed-Solomon, Viterbi), Encryption (AES, Optiga Trust B), BLE, AWS IOT Device, Charging Station (ISO 15118, ISO 61851), AUTOSAR, CanTP (ISO 15765-2), Electric Vehicle
+- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family, IMXRT, IMX6, S32Kxxxx, NRF52840 (Nordic), Aurix TC3xx (Infineon), ESP32, BeagleBone, Raspbery Pi, Nvidia Jetson
+- Technologies: VHF/HF Radio Comunication: ALE-2G, ALE-3G, audio processing (CVSD, MELPE), FEC (Reed-Solomon, Viterbi), Encryption (AES, Optiga Trust B), BLE, AWS IOT Device, Charging Station (ISO 15118, ISO 61851), AUTOSAR, CanTP (ISO 15765-2), Electric Vehicle, E-mobility
 - Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
 
 ### Experiences
 
 ***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (November 2010 to present)
+
+**Role: Firmware Manager** (January 2021 to present)
+Projects: VF E-scooter, OBC-DCDC for VF BEV, home/portable charger for VF BEV, Charging station for VF BEV.
+- Requirement analysis, system/software architecture design, safety analysis.
+- Techinical review for team member work products: software requirement, software design, static analysis code check, unit test result
+- Technical meeting with team members and stakeholder/OEM for development plan and resolve issuses
 
 ***Developing Software for DC Charging station for E-car*** (January 2021 to present)
 
