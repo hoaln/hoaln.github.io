@@ -20,13 +20,14 @@ Tay Mo, Nam Tu Liem, Ha Noi
 
 ***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (November 2010 to present)
 
-**Role: Firmware Manager** (January 2021 to present)
-Projects: VF E-scooter, OBC-DCDC for VF BEV, home/portable charger for VF BEV, Charging station for VF BEV.
+**Role: Firmware Manager** (December 2021 to present)
+
+****Projects: VF E-scooter, OBC-DCDC for VF BEV, home/portable charger for VF BEV, Charging station for VF BEV.***
 - Requirement analysis, system/software architecture design, safety analysis.
 - Techinical review for team member work products: software requirement, software design, static analysis code check, unit test result
 - Technical meeting with team members and stakeholder/OEM for development plan and resolve issuses
 
-***Developing Software for DC Charging station for E-car*** (January 2021 to present)
+***Developing Software for DC Charging station for E-car*** (January 2021 to September 2021)
 
 **Role: Firmware Team Leader**
 
