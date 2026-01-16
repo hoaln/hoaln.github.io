@@ -1,18 +1,15 @@
 ---
-layout: default
+layout: home
+author_profile: true
+header:
+  overlay_color: "#667eea"
+  overlay_filter: "0.5"
+  actions:
+    - label: "View Projects"
+      url: "/projects/"
+    - label: "Read Blog"
+      url: "/blog/"
+excerpt: "Director of Embedded and System Design Center at VinFast | 15+ Years in Vehicle Compute Platforms, Intelligent Cockpit Systems & Safety-Critical Software"
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+Welcome to my professional portfolio. I'm a Director of Embedded Engineering with expertise in AUTOSAR architecture, functional safety (ISO 26262, ISO 21434), and leading technical teams delivering mission-critical automotive solutions.

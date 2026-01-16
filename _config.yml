@@ -1,81 +1,219 @@
-#
-# This file contains configuration flags to customize your site
-#
+# Minimal Mistakes Theme Configuration
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
-# Name of your site (displayed in the header)
-name: Release Notes
+# Theme Settings
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Short bio or description (displayed in the header)
-description: Senior Fix-Bug Enginner
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-# avatar: https://assets.gitlab-static.net/uploads/-/system/user/avatar/3326713/avatar.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: luunhuhoa@gmail.com
-  facebook:
-  flickr:
-  github: hoaln
-  instagram:
-  linkedin: hoa-luu-06aa7430
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter:
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://gitlab.com/hoaln
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
+# Site Settings
+locale: "en-US"
+title: "Hoa Luu"
+title_separator: "|"
+subtitle: "Director of Embedded Engineering"
+name: "Hoa Luu"
+description: "Director of Embedded and System Design Center | Vehicle HPC & SDV Architecture | ISO 26262 Functional Safety Expert"
+url: "https://hoaln.github.io"
 baseurl: ""
+repository: "hoaln/hoaln.github.io"
+teaser: # path of fallback teaser image
+logo: # path of logo image to display in the masthead
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs: true
+words_per_minute: 200
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+# Site Author
+author:
+  name: "Hoa Luu"
+  avatar: "https://github.com/hoaln.png"
+  bio: "Director of Embedded and System Design Center at VinFast. 15+ years architecting vehicle compute platforms, intelligent cockpit systems, and safety-critical embedded software."
+  location: "Hanoi, Vietnam"
+  email: "hoa.luu@vinfast.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hoaln"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/hoaln"
 
-permalink: /:title/
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hoaln"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/hoaln"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hoa.luu@vinfast.com"
 
-# The release of Jekyll Now that you're using
-version: v1.2.0
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    block:
+      line_numbers: false
 
-# Set the Sass partials directory, as we're using @imports
+# Sass/SCSS
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
+  style: compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+# Outputting
+permalink: /:categories/:title/
+paginate: 10
+paginate_path: /page:num/
+timezone: Asia/Ho_Chi_Minh
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio (for projects)
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+# Analytics
+analytics:
+  provider: false # "google-gtag"
+  google:
+    tracking_id: # Add your Google Analytics ID when ready
+    anonymize_ip: false
+
+# Comments
+comments:
+  provider: false # "disqus"
+  disqus:
+    shortname: # Add your Disqus shortname when ready
+
+# SEO
+social:
+  type: Person
+  name: Hoa Luu
+  links:
+    - "https://linkedin.com/in/hoaln"
+    - "https://github.com/hoaln"
+
+# Site verification
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+naver_site_verification:
+
+# Main Navigation Links
+# Add links to show in the header navigation
+main:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
+  - title: "Resume"
+    url: /resume/
 
 # Exclude these files from your production _site
 exclude:

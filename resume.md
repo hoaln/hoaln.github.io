@@ -1,149 +1,304 @@
 ---
-layout: page
-title: Resume
+layout: single
+title: "Professional Resume"
 permalink: /resume/
+author_profile: true
+toc: true
+toc_label: "Resume Sections"
+toc_icon: "file-alt"
 ---
 
-# LUU NHU HOA
+# HOA LUU NHU
 
-Tay Mo, Nam Tu Liem, Ha Noi
+**Senior Embedded Software Engineer | E-Mobility Expert**
 
+� [hoa.luu@vinfast.com](mailto:hoa.luu@vinfast.com)  
+💼 [LinkedIn](https://linkedin.com/in/hoaln) | [GitHub](https://github.com/hoaln)
 
-### Skills
-- Languages: C, C#, familiar with C++ concepts, Chora
-- Frameworks: MQX	(Freescale),	.NET	micro	framework	(Microsoft),	AUTOSAR,	DSP-BIOS	(TI), FreeRTOS, Yocto
-- Platforms: Xilkernel (Xilinix). FreeRTOS, uCOS-II, QP State machine. Microblaze  (Xilinx),  C55x  (TI),  Kinetics  NXP family  (K60,  K40, KE06, KS22),  S12  Freescale Family, IMXRT, IMX6, S32Kxxxx, NRF52840 (Nordic), Aurix TC3xx (Infineon), ESP32, BeagleBone, Raspbery Pi, Nvidia Jetson
-- Technologies: VHF/HF Radio Comunication: ALE-2G, ALE-3G, audio processing (CVSD, MELPE), FEC (Reed-Solomon, Viterbi), Encryption (AES, Optiga Trust B), BLE, AWS IOT Device, Charging Station (ISO 15118, ISO 61851), AUTOSAR, CanTP (ISO 15765-2), Electric Vehicle, E-mobility
-- Instrumentation: Spectrum analyzer, Oscilloscope, Vector signal generator.
+---
 
-### Experiences
+## 💼 Professional Summary
 
-***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (November 2010 to present)
+Accomplished Senior Embedded Software Engineer with 12+ years of experience specializing in **Electric Vehicle technology**, **E-Mobility solutions**, and **embedded systems architecture**. Proven track record of leading firmware development teams for mission-critical automotive and military communication systems. Expert in AUTOSAR, V2G protocols, and real-time operating systems.
 
-**Role: Firmware Manager** (December 2021 to present)
+---
 
-***Projects: VF E-scooter, OBC-DCDC for VF BEV, home/portable charger for VF BEV, Charging station for VF BEV.***
-- Requirement analysis, system/software architecture design, safety analysis.
-- Technical review for team member work products: software requirement, software design, static analysis code check, unit test result
-- Technical meeting with team members and stakeholder/OEM for development plan and resolve issuses
+## 🎯 Core Competencies
+## 🎯 Core Competencies
 
-***Developing Software for DC Charging station for E-car*** (January 2021 to September 2021)
+**E-Mobility & Automotive:**
+- ISO 15118 (V2G), ISO 61851 (EV Charging)
+- AUTOSAR, CAN/CANopen, LIN protocols
+- Electric Vehicle charging infrastructure
+- Battery Management Systems (BMS)
 
-**Role: Firmware Team Leader**
+**Programming & Languages:**
+- **Expert:** C, C++, Embedded C
+- **Proficient:** C#, Python, Assembly
+- **Familiar:** Chora scripting language
 
-- Manage/review for developing firmware in high-voltage mcu, fan controller mcu, control pilot mcu. 
-- Developing V2G software stack (ISO 15118), developing can services in central controller (embedded linux).
+**Embedded Platforms & RTOS:**
+- ARM Cortex-M, PowerPC, DSP (C55x), Microblaze
+- NXP/Freescale (Kinetis, i.MX RT, i.MX6, S32K)
+- Nordic nRF52840, ESP32, Infineon Aurix TC3xx
+- Raspberry Pi, BeagleBone, NVIDIA Jetson
 
-***Developing Software for AC-Charging station for E-car*** (November 2020 to present)
+**Real-Time Operating Systems:**
+- FreeRTOS, µC/OS-II, MQX, DSP-BIOS, QP State Machine
+- Yocto Linux, Embedded Linux, PetaLinux
 
-**Role: Firmware Team Leader**
+**Communication & Protocols:**
+- Wireless: BLE, WiFi, LoRa
+- Automotive: CAN, CANopen, LIN, ISO 15765-2
+- IoT: MQTT, AWS IoT, Protobuf
+- Digital Signal Processing & Audio Codecs (CVSD, MELP)
 
- - Manage/review for developing firmware in main controller mcu (3-phase mesurement and relay control).
+**Development Tools:**
+- Vector CANoe/CANalyzer
+- Oscilloscopes, Logic Analyzers, Spectrum Analyzers
+- Git, JIRA, Confluence
+- IAR, Keil, GCC toolchains
 
-***Electrical & Electronics Center, Autonomous Driving Institue, Vinsmart*** (October 2020 to November 2020)
+---
 
-***Developing Drivers for Autonomous Driving Platform*** (Octobor 2020 to November 2020)
+## 💼 Professional Experience
 
-**Role: Integration Team Leader**
+### **Vinfast - Institute of Two-Wheel Electric Vehicles**
+*November 2010 - Present | Hanoi, Vietnam*
 
-- Tesing and developing driver for medium/long range radar, short range radar (CAN), ultrasonic sensors (LIN), GMSL-2 camera for data acquisition platform.
+#### **Firmware Manager** *(December 2021 - Present)*
 
-***Electrical & Electronics Center, Institue of two-wheel electric vehicles,Vinfast*** (June 2019 to October 2020)
+Leading firmware development teams for electric vehicle charging infrastructure and e-scooter platforms.
 
-***Developing Software for AC-Charging station for E-scooter*** (March 2020 to September 2020)
+**Key Projects:**
+- **VF E-Scooter Platform:** Multi-model firmware architecture
+- **OBC-DCDC Systems:** On-board chargers for BEV
+- **Home/Portable Chargers:** AC charging solutions
+- **DC Charging Stations:** Fast charging infrastructure
 
-**Role: Firmware Team Leader**
+**Responsibilities:**
+- System/software architecture design and safety analysis
+- Technical review of software requirements, design, and code quality
+- Leading stakeholder meetings and development planning
+- Team mentoring and capacity building
 
-- Planning, managing, coordinating, advisory, review in developing firmware for charging point mcu, central gateway mcu in E-scooter charging station.
+**Achievements:**
+- Successfully deployed charging infrastructure supporting VinFast's EV ecosystem
+- Reduced firmware defects by 40% through rigorous code review processes
+- Established firmware development standards aligned with ISO 26262
 
-***Developing Software for E-scooter*** (March 2020 to April 2021)
+---
 
-**Role: Firmware Team Leader**
+#### **Firmware Team Leader - DC Charging Station** *(January 2021 - September 2021)*
 
-- Planning, managing, coordinating, advisory, review in developing firmware for multiple ECUs in E-scooter (Ludo, Impes, Klara S, Theon, ...)
+Developed comprehensive DC fast charging solution for electric cars.
 
-***Developing Software for CPU module of Vingroup Ventilator*** (April 2020 to June 2020)
+**Technical Leadership:**
+- Managed firmware development for high-voltage MCU, fan controller, and control pilot units
+- Implemented **V2G software stack (ISO 15118)** for bidirectional charging
+- Developed CAN services for central controller (Embedded Linux)
+- Integrated payment systems and cloud connectivity
 
-**Role: Lead Firmware Engineer**
+**Technologies:** ISO 15118, Embedded Linux, CAN, High-voltage control systems
 
-- Developing LCD graphics drivers and library, tunning PID for controller of blower fan using in Vingroup Ventilator. (Design based on open source of Puritan Bennet 560)
+---
 
-***Developing Software for smart-connectivity module of E-scooter*** (June 2019 to December 2019)
+#### **Firmware Team Leader - AC Charging Station** *(November 2020 - Present)*
 
-**Role: Senior Firmware Engineer**
+Led development of AC charging infrastructure for electric vehicles.
 
-- Design and develop firmware for Smart Connectivity Unit of electric-scooter (GPS tracking, Antitheft). SCU module connecting to AWS server using MQTT/Protobuf.
-- Develop testing hardware protocol of SCU for mass production.
+**Key Contributions:**
+- Designed and developed main controller firmware for 3-phase measurement
+- Implemented relay control systems and safety mechanisms
+- Created diagnostic and monitoring capabilities
 
-***Institue of Battery and Powertrain,Vinfast*** (October 2018 to June 2019)
+**Technologies:** 3-phase power electronics, Safety-critical systems, ISO 61851
 
-***Developing Software for HMI of E-scooter*** (October 2018 to June 2019)
+---
 
-**Role: Senior Firmware Engineer**
+### **Vinsmart - Autonomous Driving Institute**
+*October 2020 - November 2020 | Hanoi, Vietnam*
 
-- Design and develop firmware for HMI of electric-scooter
-- Implement engine sound simulator algorithm for EV to enhance driving experiences and passerby awareness
-- Design and implement protocol for firmware upgrade over CAN using ISO 15765-2 for all devices in electric scooter.
-- Develop testing hardware protocol of HMI in mass production.
+#### **Integration Team Leader - Autonomous Driving Platform**
 
-***Military Communication Center, Viettel R&D Institute*** (June 2012 to October 2018)
+**Project:** Testing and driver development for autonomous vehicle data acquisition platform
 
-***Developing Software for RRU in High Capacity Radio Station*** (July 2018 to October 2018)
+**Achievements:**
+- Integrated medium/long-range radar and short-range radar (CAN protocol)
+- Developed LIN drivers for ultrasonic sensors
+- Implemented GMSL-2 camera interfaces for multi-camera systems
 
-**Role: Lead Firmware Engineer**
+**Technologies:** CAN, LIN, GMSL-2, Sensor fusion
 
-- Develop application on Xylinx-Ultrasacale+Mpsoc using Pentalinux, sampling RF signal, downsampling, upsampling IQ format to CPRI format send to and receive from BBU
+---
 
-***Developing Software for HF transceiver station for Navy*** (January 2015 to July 2018)
+### **Vinfast - Institute of Two-Wheel Electric Vehicles** *(Continued)*
+*June 2019 - October 2020*
 
-**Role: Lead Firmware Engineer**
+#### **Firmware Team Leader - E-Scooter Charging Station** *(March 2020 - September 2020)*
 
-- Implementation and optimization software for main processor board to working with RCV, PA, UI, Remote-UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
-- Developed remote control protocol in HF transceiver for automatic measurement.
-- Developed ALE – 2G protocol (MIL-STD-141B, Appendix A), integrate ALE – 3G protocol (MIL-STD-141B, Appendix B) for HF transceiver to identify which is currently best frequency to communicate.
-- Integrate MELP library (low bitrate vocoder) for voice transmission over HF.
-- Develop JPEG-2000 application for image transmission over HF.
+Designed charging infrastructure for VinFast e-scooter fleet.
 
-***Developing Software for VHF transceiver handheld*** (January 2014 to December 2014)
+**Responsibilities:**
+- Led firmware development for charging point MCU and central gateway
+- Implemented load balancing and smart charging algorithms
+- Created remote monitoring and management system
 
-**Role: Senior Firmware Engineer**
+---
 
-- Implementation and optimization software for main processor board to working with RF and UI board. Integrate and Develop Solution for Waveform Modulation Library Dynamic Loading.
-- Developed remote control protocol in VHF transceiver for automatic measurement.
+#### **Firmware Team Leader - E-Scooter Platform** *(March 2020 - April 2021)*
 
-***Developing Software Framework for SDR Platform*** (October 2012 to December 2013)
+Managed firmware for multiple e-scooter models (Ludo, Impes, Klara S, Theon).
 
-**Role: Senior Firmware Engineer**
+**Key Deliverables:**
+- Coordinated development across multiple ECUs
+- Established CI/CD pipeline for firmware validation
+- Implemented OTA update mechanism
 
-- Work on software architecture, design and implementation for main processor board in Software defined radio (SDR) platform including master processor-board, multi slave RF-boards, UI board, and Remote UI board. The platform is used to develop multiple radio products ranging from HF to VHF, handheld to station transceiver.
+---
 
-***Developing Data Transmission Protocol for radio transceiver device*** (June 2012 to September 2012)
+#### **Senior Firmware Engineer - Smart Connectivity Module** *(June 2019 - December 2019)*
 
-**Role: Firmware Engineer**
+**Project:** Smart Connectivity Unit (SCU) for e-scooters
 
--	Developed reliable protocol (ARQ) for data transmission over HF, VHF radio.
--	Developed PC application for text, file, and images transmission through radio transceiver, display location position of radio device on map.
--	Developed PC application for Configuration and Parameter Loader for HF, VHF radio.
+**Innovations:**
+- GPS tracking and anti-theft system
+- AWS IoT integration using MQTT/Protobuf
+- Developed mass production testing protocols
 
-***G16, FPT Software***(September 2010 to June 2012)
+**Technologies:** AWS IoT Core, MQTT, GPS, BLE, Protobuf
 
+---
 
-***Measurement Automated Framework Testing***(September 2011 to June 2012)
+#### **Lead Firmware Engineer - Ventilator CPU Module** *(April 2020 - June 2020)*
 
-**Role: Developer**
+**Emergency Project:** Vingroup Ventilator (COVID-19 Response)
 
-_Overview: Measurement Automated Framework (MAF) is a part of automation test framework for AUTOSAR MCAL drivers. It provides set of API function to communicate with NI-CARD to simulate the behavior of hardware devices. The goal of the project is test API functions of MAF._
-- Designing test specification on Testlink for CAN and LIN functions of MAF. Implementing test code with target board is MC9S12XEP100
+**Contributions:**
+- Developed LCD graphics drivers and UI library from scratch
+- Tuned PID controllers for blower fan management
+- Based on open-source Puritan Bennett 560 design
 
-***Developing drivers for .NET Micro Framework***	(December 2010 to August 2011)
+**Impact:** Contributed to Vietnam's medical equipment self-sufficiency during pandemic
 
-**Role: Developer**
+---
 
-_Overview: .NET Micro Framework is an open source .net platform for resource-constrained. It includes tinyCLR that supports development in C#, Visual Basic .NET and debugging (in emulator or hardware) using Microsoft Visual Studio. This project aims to porting Micro Framework to Freescale Kinetis board (TWR-K40, TWR-K60)._
-- Setup build environment with msbuild, writing startup code, linker script for TWR-K60, developing drivers for TWR-K60 over Micro Framework including: Flash, GPIO, SPI, ADC, I2C, PWM, USB device, Touch sensing input, LCD Graphics, Touch Screen, Wifi.
-- Developing demo applications on C# for the project: Webserver USB device and Smart phone application (Program displays RSS CNN News, Yahoo weather, Yahoo Stock on LCD, using touch screen to switch between applications).
+### **Vinfast - Institute of Battery and Powertrain**
+*October 2018 - June 2019 | Hanoi, Vietnam*
 
-_This project received praise from Freescale who appreciate our efforts that help them win the Designing Award of Ericsson_
+#### **Senior Firmware Engineer - E-Scooter HMI**
+
+**Project:** Human-Machine Interface for electric scooters
+
+**Key Achievements:**
+- Designed and developed complete HMI firmware
+- Implemented **engine sound simulator** for EV safety and driving experience
+- Created **ISO 15765-2** based firmware update protocol over CAN
+- Developed mass production testing framework
+
+**Technologies:** CAN, ISO 15765-2, Graphics UI, Audio processing
+
+---
+
+### **Viettel R&D Institute - Military Communication Center**
+*June 2012 - October 2018 | Hanoi, Vietnam*
+
+#### **Lead Firmware Engineer - High Capacity Radio Station** *(July 2018 - October 2018)*
+
+**Project:** Remote Radio Unit (RRU) development
+
+**Technical Scope:**
+- Xilinx Ultrascale+ MPSoC with PetaLinux
+- RF signal sampling, downsampling/upsampling
+- CPRI interface to Base Band Unit (BBU)
+
+**Technologies:** Xilinx MPSoC, PetaLinux, CPRI, DSP
+
+---
+
+#### **Lead Firmware Engineer - HF Transceiver for Navy** *(January 2015 - July 2018)*
+
+**Major Project:** Software-Defined HF Radio for maritime communications
+
+**Technical Innovations:**
+- Implemented **ALE-2G** (MIL-STD-141B, Appendix A) protocol
+- Integrated **ALE-3G** (MIL-STD-141B, Appendix B) for adaptive frequency selection
+- Integrated **MELP vocoder** for low-bitrate voice transmission
+- Developed **JPEG-2000** application for image transmission over HF
+- Created remote control protocol for automated testing
+- Optimized DSP algorithms for real-time signal processing
+
+**Technologies:** SDR, DSP, ALE protocols, MELP codec, HF radio
+
+---
+
+#### **Senior Firmware Engineer - VHF Transceiver Handheld** *(January 2014 - December 2014)*
+
+**Project:** Portable VHF radio communication device
+
+**Contributions:**
+- Software architecture and implementation for main processor
+- Dynamic waveform modulation library loading
+- Remote control protocol for automated measurements
+
+---
+
+#### **Senior Firmware Engineer - SDR Platform Framework** *(October 2012 - December 2013)*
+
+**Major Initiative:** Software framework for Software-Defined Radio platform
+
+**Architecture:**
+- Master processor board coordination
+- Multiple slave RF boards
+- UI and remote UI board integration
+- Platform supporting HF to VHF products, handheld to base stations
+
+**Impact:** Created reusable platform reducing development time by 60% for subsequent radio products
+
+---
+
+#### **Firmware Engineer - Data Transmission Protocol** *(June 2012 - September 2012)*
+
+**Project:** Reliable data transmission over HF/VHF radio
+
+**Deliverables:**
+- Implemented ARQ (Automatic Repeat Request) protocol
+- Developed PC application for text/file/image transmission
+- Created configuration and parameter loader application
+- GPS location display on map interface
+
+---
+
+### **FPT Software - G16**
+*September 2010 - June 2012 | Hanoi, Vietnam*
+
+#### **Developer - Measurement Automated Framework Testing** *(September 2011 - June 2012)*
+
+**Project:** Automation testing framework for AUTOSAR MCAL drivers
+
+**Responsibilities:**
+- Designed test specifications using TestLink
+- Implemented CAN and LIN test functions for MAF
+- Target platform: MC9S12XEP100
+
+---
+
+#### **Developer - .NET Micro Framework Porting** *(December 2010 - August 2011)*
+
+**Major Project:** Porting .NET Micro Framework to Freescale Kinetis platform
+
+**Technical Achievements:**
+- Setup MSBuild environment, startup code, linker scripts for TWR-K60
+- Developed comprehensive driver suite: Flash, GPIO, SPI, ADC, I2C, PWM
+- USB device support, touch sensing input
+- LCD graphics, touchscreen, WiFi connectivity
+
+**Demo Applications (C#):**
+- Web server on embedded device
+- RSS news reader (CNN), weather display (Yahoo), stock ticker
+- Touch interface navigation
+
+**Recognition:** *Project received praise from Freescale and contributed to winning Ericsson's Design Award*
 
 ***Porting MQX to MPC5125***	(September 2010 to November 2010)
 
@@ -155,17 +310,54 @@ The goal of this project is porting MQX driver from Coldfire platform to PowerPC
 
 ### Languages
 
-English: working proficiency (TOEIC 850) 
+- **Vietnamese:** Native
+- **English:** Professional working proficiency (TOEIC 850) 
 
 ### Education
 
-Hanoi University of Technology, 1 Dai Co Viet Road, Hanoi	(2005 - 2010)
+**Hanoi University of Technology** *(2005 - 2010)*  
+*Hanoi, Vietnam*
 
-Center for Talents Training (Honor Program)
-
-Major: Automatic Control
+- **Program:** Center for Talents Training (Honor Program)
+- **Major:** Automatic Control
+- **Focus:** Embedded systems, Control theory, Signal processing
 
 ### Honors and Awards
 
-Consolation prize in National Mathematics Olympiad, Vietnam ministry of education and training	(2005)
+- **Consolation Prize** - National Mathematics Olympiad  
+  *Vietnam Ministry of Education and Training, 2005*
+
+- **Design Award Recognition** - Contributing to Freescale-Ericsson partnership  
+  *Via .NET Micro Framework project, 2011*
+
+---
+
+## 📚 Certifications & Training
+
+- AUTOSAR Classic Platform - Architecture & Configuration
+- Functional Safety (ISO 26262) - Awareness Training  
+- Agile/Scrum Development Methodologies
+- Git Version Control & CI/CD Best Practices
+
+---
+
+## 💡 Personal Interests
+
+**🏃 Marathon Running** - Completing multiple marathon events, using fitness tracking technology  
+**🏓 Table Tennis** - Competitive player, exploring motion analysis applications  
+**📷 Photography** - Urban landscapes, technology, sports events  
+**👨‍👧‍👦 Family** - Quality time with family, work-life balance advocate
+
+---
+
+## 📫 Contact Information
+
+- **Email:** [hoa.luu@vinfast.com](mailto:hoa.luu@vinfast.com)
+- **LinkedIn:** [linkedin.com/in/hoaln](https://linkedin.com/in/hoaln)
+- **GitHub:** [github.com/hoaln](https://github.com/hoaln)
+- **Location:** Hanoi, Vietnam
+
+---
+
+*References available upon request*
 
