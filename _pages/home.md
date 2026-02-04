@@ -2,9 +2,8 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#667eea"
-  overlay_filter: "0.5"
   overlay_image: /images/banner.png
+  overlay_filter: "0.2"
   actions:
     - label: "View My Profile"
       url: "/about/"
