@@ -1,26 +1,135 @@
-> March, 2016: If you're on an old version of Jekyll Now and run into a) build warnings or b) syntax highlighting issues caused by [Jekyll 3 and GitHub Pages updates](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0), just :sparkles:[update your _config.yml](https://github.com/barryclark/jekyll-now/pull/445/files):sparkles: and you'll be set!
+# hoaln.github.io
 
-# Jekyll Now
+Personal portfolio and blog powered by Jekyll and the Minimal Mistakes theme.
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+## About
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+This is the personal website of Hoa Luu, Director of Embedded and System Design Center at VinFast, featuring:
+- Professional portfolio
+- Technical blog posts on embedded systems, EV technology, and software architecture
+- Resume and project showcase
 
-- You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependencies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
+## Technology Stack
 
-In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+- **Static Site Generator:** Jekyll
+- **Theme:** [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) by Michael Rose
+- **Hosting:** GitHub Pages
+- **Deployment:** Automatic via GitHub Pages
 
-![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+## Local Development
 
-## Quick Start
+### Prerequisites
 
-### Step 1) Fork Jekyll Now to your User Repository
+- Ruby (version 2.5.0 or higher)
+- Bundler gem
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hoaln/hoaln.github.io.git
+   cd hoaln.github.io
+   ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+3. Run the local server:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Open your browser to `http://localhost:4000`
+
+### Updating Dependencies
+
+To update all gems to their latest versions:
+```bash
+bundle update
+```
+
+## Site Structure
+
+```
+.
+├── _config.yml          # Site configuration
+├── _data/
+│   └── navigation.yml   # Navigation menu configuration
+├── _pages/              # Static pages
+│   ├── blog.md
+│   └── home.md
+├── _posts/              # Blog posts
+├── assets/
+│   └── css/
+│       └── main.scss    # Custom CSS overrides
+├── about.md
+├── projects.md
+├── resume.md
+└── index.html           # Homepage
+```
+
+## Writing Blog Posts
+
+Create a new Markdown file in `_posts/` with the format: `YYYY-MM-DD-title.md`
+
+Example front matter:
+```yaml
+---
+layout: single
+title: "Your Post Title"
+date: 2026-01-16
+categories:
+  - Category1
+  - Category2
+tags:
+  - tag1
+  - tag2
+excerpt: "Brief description"
+author_profile: true
+toc: true
+---
+
+Your content here...
+```
+
+## Customization
+
+### Changing the Theme Skin
+
+Edit [_config.yml](_config.yml) and change the `minimal_mistakes_skin` value:
+```yaml
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+```
+
+### Adding Custom Styles
+
+Add custom CSS to [assets/css/main.scss](assets/css/main.scss) below the theme imports.
+
+### Modifying Navigation
+
+Edit [_data/navigation.yml](_data/navigation.yml) to update the main navigation menu.
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+## Documentation
+
+- [Minimal Mistakes Documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+- [Jekyll Documentation](https://jekyllrb.com/docs/)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+## License
+
+Content is copyrighted by Hoa Luu. The Minimal Mistakes theme is licensed under the MIT License.
+
+## Contact
+
+- Email: hoa.luu@vinfast.com
+- LinkedIn: [linkedin.com/in/hoaln](https://linkedin.com/in/hoaln)
+- GitHub: [github.com/hoaln](https://github.com/hoaln)
 
 Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
 

@@ -77,7 +77,11 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - README.md
+  - README-NEW.md
+  - MIGRATION-GUIDE.md
   - tmp
+  - deploy.ps1
 keep_files:
   - .git
   - .svn
@@ -202,23 +206,3 @@ google_site_verification:
 bing_site_verification:
 yandex_site_verification:
 naver_site_verification:
-
-# Main Navigation Links
-# Add links to show in the header navigation
-main:
-  - title: "About"
-    url: /about/
-  - title: "Projects"
-    url: /projects/
-  - title: "Blog"
-    url: /blog/
-  - title: "Resume"
-    url: /resume/
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
