@@ -4,7 +4,7 @@ permalink: /
 header:
   overlay_color: "#667eea"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg
+  overlay_image: /images/banner.png
   actions:
     - label: "View My Profile"
       url: "/about/"

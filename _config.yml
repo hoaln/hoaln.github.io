@@ -24,7 +24,7 @@ words_per_minute: 200
 # Site Author
 author:
   name: "Hoa Luu"
-  avatar: "https://github.com/hoaln.png"
+  avatar: "/images/avatar.png"
   bio: "Director of Embedded and System Design Center at VinFast. 15+ years architecting vehicle compute platforms, intelligent cockpit systems, and safety-critical embedded software."
   location: "Hanoi, Vietnam"
   email: "luunhuhoa@gmail.com"
