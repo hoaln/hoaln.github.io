@@ -6,6 +6,7 @@ author_profile: true
 toc: true
 toc_label: "Resume Sections"
 toc_icon: "file-alt"
+published: false
 ---
 
 # Hoa Luu
