@@ -6,6 +6,7 @@ author_profile: true
 toc: true
 toc_label: "Project Categories"
 toc_icon: "folder-open"
+published: false
 ---
 
 ## Professional Projects
