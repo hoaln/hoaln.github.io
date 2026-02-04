@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Work dilemma
+published: false
 ---
 
 Mấy hôm nay mình đọc tiểu sử steve jobs, nghĩ đến mối quan hệ cộng sinh giữa woz và jobs những ngày đầu thành lập Apple. Tự dưng lại nhớ đến 1 đoạn trong lớp dạy về startup của peter thiel:

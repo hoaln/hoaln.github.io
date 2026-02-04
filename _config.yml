@@ -27,7 +27,7 @@ author:
   avatar: "https://github.com/hoaln.png"
   bio: "Director of Embedded and System Design Center at VinFast. 15+ years architecting vehicle compute platforms, intelligent cockpit systems, and safety-critical embedded software."
   location: "Hanoi, Vietnam"
-  email: "hoa.luu@vinfast.com"
+  email: "luunhuhoa@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -47,7 +47,7 @@ footer:
       url: "https://linkedin.com/in/hoaln"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:hoa.luu@vinfast.com"
+      url: "mailto:luunhuhoa@gmail.com"
 
 # Reading Files
 include:

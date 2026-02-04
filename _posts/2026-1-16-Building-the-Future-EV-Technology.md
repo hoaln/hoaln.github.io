@@ -2,6 +2,7 @@
 layout: single
 title: "Building the Future: My Journey in Electric Vehicle Technology"
 date: 2026-01-16
+published: false
 categories:
   - Electric Vehicles
   - Embedded Systems
