@@ -17,12 +17,27 @@
   .archive__item-excerpt,
   p,
   .btn {
-    color: white !important;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #ffffff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   }
 }
 
 .page__hero-excerpt {
-  color: white !important;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+// Force white text on all hero sections
+.page__hero {
+  h1, h2, h3, h4, p, span, div, .page__meta {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+}
+
+// Specific override for excerpt paragraph
+.layout--splash .page__hero p,
+.layout--home .page__hero p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
