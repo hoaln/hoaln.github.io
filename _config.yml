@@ -15,8 +15,8 @@ description: "Director of Embedded and System Design Center | Vehicle HPC & SDV 
 url: "https://hoaln.github.io"
 baseurl: ""
 repository: "hoaln/hoaln.github.io"
-teaser: # path of fallback teaser image
-logo: # path of logo image to display in the masthead
+teaser: /images/banner.png # path of fallback teaser image
+logo: /images/avatar.png # path of logo image to display in the masthead
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true
 words_per_minute: 200
