@@ -77,9 +77,9 @@ feature_row4:
 
 ## Recent Blog Posts
 
-<div class="grid__wrapper">
+<div class="entries-list">
 {% for post in site.posts limit:3 %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html %}
 {% endfor %}
 </div>
 
