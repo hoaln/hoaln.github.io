@@ -8,7 +8,7 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom overrides for white text on banner
+// Custom overrides for white text on banner - MUST COME AFTER THEME IMPORTS
 .page__hero--overlay {
   .page__title,
   .page__subtitle,
@@ -40,4 +40,15 @@
 .layout--home .page__hero p {
   color: #ffffff !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+// Nuclear option - force ALL text in page hero to be white
+.page__hero--overlay * {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
+}
+
+.page__hero .wrapper * {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
